@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.restservice.CalculateTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2020-07-14T06:18:08" hostname="DESKTOP-2ALQQDC" time="0.705">
+  <properties/>
+  <testcase name="calculateTest1()" classname="com.example.restservice.CalculateTest" time="0.221"/>
+  <testcase name="calculateTest2()" classname="com.example.restservice.CalculateTest" time="0.256"/>
+  <testcase name="calculateTest3()" classname="com.example.restservice.CalculateTest" time="0.214"/>
+  <system-out><![CDATA[2020-07-14 09:18:05.257  INFO 7752 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.example.restservice.CalculateTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2020-07-14 09:18:05.287  INFO 7752 --- [    Test worker] .b.t.a.w.s.WebMvcTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2020-07-14 09:18:05.297  INFO 7752 --- [    Test worker] .b.t.a.w.s.WebMvcTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@4a626818, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@5fafbdf1, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@7e79707, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@1350943, org.springframework.test.context.support.DirtiesContextTestExecutionListener@584e83d5, org.springframework.test.context.event.EventPublishingTestExecutionListener@7a2cfd18, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@414802f5, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@689e648e, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@44e20263, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@593be3da, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@58650da2]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.2.0.RELEASE)
+
+2020-07-14 09:18:05.490  INFO 7752 --- [    Test worker] com.example.restservice.CalculateTest    : Starting CalculateTest on DESKTOP-2ALQQDC with PID 7752 (started by Paul in C:\Users\Paul\Documents\Study_n_code\JOB\Zenitech\complete)
+2020-07-14 09:18:05.490  INFO 7752 --- [    Test worker] com.example.restservice.CalculateTest    : No active profile set, falling back to default profiles: default
+2020-07-14 09:18:07.679  INFO 7752 --- [    Test worker] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-07-14 09:18:08.304  INFO 7752 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2020-07-14 09:18:08.304  INFO 7752 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2020-07-14 09:18:08.351  INFO 7752 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 47 ms
+2020-07-14 09:18:08.404  INFO 7752 --- [    Test worker] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-07-14 09:18:08.436  INFO 7752 --- [    Test worker] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-07-14 09:18:08.467  INFO 7752 --- [    Test worker] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-07-14 09:18:08.567  INFO 7752 --- [    Test worker] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: createUsingPUT_1
+2020-07-14 09:18:08.577  INFO 7752 --- [    Test worker] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_1
+2020-07-14 09:18:08.597  INFO 7752 --- [    Test worker] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: readUsingGET_1
+2020-07-14 09:18:08.618  INFO 7752 --- [    Test worker] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_1
+2020-07-14 09:18:08.636  INFO 7752 --- [    Test worker] com.example.restservice.CalculateTest    : Started CalculateTest in 3.307 seconds (JVM running for 19.525)
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /calculate
+       Parameters = {owner=[James Jones]}
+          Headers = []
+             Body = <no character encoding set>
+    Session Attrs = {}
+
+Handler:
+             Type = com.example.restservice.BuildingRecController
+           Method = com.example.restservice.BuildingRecController#calculate(String)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:"text/plain;charset=ISO-8859-1", Content-Length:"7"]
+     Content type = text/plain;charset=ISO-8859-1
+             Body = 2000000
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /calculate
+       Parameters = {owner=[James Jones]}
+          Headers = []
+             Body = <no character encoding set>
+    Session Attrs = {}
+
+Handler:
+             Type = com.example.restservice.BuildingRecController
+           Method = com.example.restservice.BuildingRecController#calculate(String)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:"text/plain;charset=ISO-8859-1", Content-Length:"7"]
+     Content type = text/plain;charset=ISO-8859-1
+             Body = 2000000
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /calculate
+       Parameters = {owner=[Erix Brad]}
+          Headers = []
+             Body = <no character encoding set>
+    Session Attrs = {}
+
+Handler:
+             Type = com.example.restservice.BuildingRecController
+           Method = com.example.restservice.BuildingRecController#calculate(String)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:"text/plain;charset=ISO-8859-1", Content-Length:"7"]
+     Content type = text/plain;charset=ISO-8859-1
+             Body = 3393840
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /calculate
+       Parameters = {owner=[Erix Brad]}
+          Headers = []
+             Body = <no character encoding set>
+    Session Attrs = {}
+
+Handler:
+             Type = com.example.restservice.BuildingRecController
+           Method = com.example.restservice.BuildingRecController#calculate(String)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:"text/plain;charset=ISO-8859-1", Content-Length:"7"]
+     Content type = text/plain;charset=ISO-8859-1
+             Body = 3393840
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /calculate
+       Parameters = {owner=[Jurg Lautrei]}
+          Headers = []
+             Body = <no character encoding set>
+    Session Attrs = {}
+
+Handler:
+             Type = com.example.restservice.BuildingRecController
+           Method = com.example.restservice.BuildingRecController#calculate(String)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:"text/plain;charset=ISO-8859-1", Content-Length:"7"]
+     Content type = text/plain;charset=ISO-8859-1
+             Body = 1005200
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /calculate
+       Parameters = {owner=[Jurg Lautrei]}
+          Headers = []
+             Body = <no character encoding set>
+    Session Attrs = {}
+
+Handler:
+             Type = com.example.restservice.BuildingRecController
+           Method = com.example.restservice.BuildingRecController#calculate(String)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:"text/plain;charset=ISO-8859-1", Content-Length:"7"]
+     Content type = text/plain;charset=ISO-8859-1
+             Body = 1005200
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

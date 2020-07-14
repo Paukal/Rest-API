@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - TaxRateTests</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>TaxRateTests</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.example.restservice.html">com.example.restservice</a> &gt; TaxRateTests</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">6</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.433s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">postDBNonExistRequestTest()</td>
+<td class="success">0.091s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">putDeleteRequestTest()</td>
+<td class="success">0.108s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">putGetRequestTest()</td>
+<td class="success">0.089s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">putPostRequestTest()</td>
+<td class="success">0.034s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">putRequestTest()</td>
+<td class="success">0.064s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">putTwoTimesRequestTest()</td>
+<td class="success">0.047s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>2020-07-14 09:18:09.419  INFO 7752 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.example.restservice.TaxRateTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2020-07-14 09:18:09.442  INFO 7752 --- [    Test worker] .b.t.a.w.s.WebMvcTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2020-07-14 09:18:09.452  INFO 7752 --- [    Test worker] .b.t.a.w.s.WebMvcTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@777d89f1, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@992fc40, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@20b96904, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@41701a4, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1f3e32d6, org.springframework.test.context.event.EventPublishingTestExecutionListener@150bd8d, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@6aca05ea, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@566c3336, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@382a03af, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@3c126df2, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@6cdcacf]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.2.0.RELEASE)
+
+2020-07-14 09:18:09.706  INFO 7752 --- [    Test worker] com.example.restservice.TaxRateTests     : Starting TaxRateTests on DESKTOP-2ALQQDC with PID 7752 (started by Paul in C:\Users\Paul\Documents\Study_n_code\JOB\Zenitech\complete)
+2020-07-14 09:18:09.706  INFO 7752 --- [    Test worker] com.example.restservice.TaxRateTests     : No active profile set, falling back to default profiles: default
+2020-07-14 09:18:11.944  INFO 7752 --- [    Test worker] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-07-14 09:18:12.483  INFO 7752 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2020-07-14 09:18:12.483  INFO 7752 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2020-07-14 09:18:12.520  INFO 7752 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 37 ms
+2020-07-14 09:18:12.567  INFO 7752 --- [    Test worker] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-07-14 09:18:12.567  INFO 7752 --- [    Test worker] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-07-14 09:18:12.583  INFO 7752 --- [    Test worker] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-07-14 09:18:12.636  INFO 7752 --- [    Test worker] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: createUsingPUT_1
+2020-07-14 09:18:12.652  INFO 7752 --- [    Test worker] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_1
+2020-07-14 09:18:12.652  INFO 7752 --- [    Test worker] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: readUsingGET_1
+2020-07-14 09:18:12.652  INFO 7752 --- [    Test worker] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_1
+2020-07-14 09:18:12.668  INFO 7752 --- [    Test worker] com.example.restservice.TaxRateTests     : Started TaxRateTests in 3.195 seconds (JVM running for 23.563)
+
+MockHttpServletRequest:
+      HTTP Method = DELETE
+      Request URI = /deleteTax
+       Parameters = {property_type=[apartment]}
+          Headers = []
+             Body = &lt;no character encoding set&gt;
+    Session Attrs = {}
+
+Handler:
+             Type = com.example.restservice.TaxRateController
+           Method = com.example.restservice.TaxRateController#delete(String)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:&quot;text/plain;charset=ISO-8859-1&quot;, Content-Length:&quot;6&quot;]
+     Content type = text/plain;charset=ISO-8859-1
+             Body = 200 OK
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = DELETE
+      Request URI = /deleteTax
+       Parameters = {property_type=[apartment]}
+          Headers = []
+             Body = &lt;no character encoding set&gt;
+    Session Attrs = {}
+
+Handler:
+             Type = com.example.restservice.TaxRateController
+           Method = com.example.restservice.TaxRateController#delete(String)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:&quot;text/plain;charset=ISO-8859-1&quot;, Content-Length:&quot;6&quot;]
+     Content type = text/plain;charset=ISO-8859-1
+             Body = 200 OK
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = PUT
+      Request URI = /createTax
+       Parameters = {}
+          Headers = [Content-Type:&quot;application/json;charset=UTF-8&quot;, Accept:&quot;application/json&quot;]
+             Body = {
+  &quot;property_type&quot; : &quot;flat&quot;,
+  &quot;amount&quot; : 200,
+  &quot;propertyType&quot; : &quot;flat&quot;
+}
+    Session Attrs = {}
+
+Handler:
+             Type = com.example.restservice.TaxRateController
+           Method = com.example.restservice.TaxRateController#create(TaxRate)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:&quot;application/json;charset=ISO-8859-1&quot;, Content-Length:&quot;29&quot;]
+     Content type = application/json;charset=ISO-8859-1
+             Body = Property type already exists.
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /updateTax
+       Parameters = {}
+          Headers = [Content-Type:&quot;application/json;charset=UTF-8&quot;, Accept:&quot;application/json&quot;]
+             Body = {
+  &quot;property_type&quot; : &quot;non existant property&quot;,
+  &quot;amount&quot; : 200,
+  &quot;propertyType&quot; : &quot;non existant property&quot;
+}
+    Session Attrs = {}
+
+Handler:
+             Type = com.example.restservice.TaxRateController
+           Method = com.example.restservice.TaxRateController#update(TaxRate)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:&quot;application/json;charset=ISO-8859-1&quot;, Content-Length:&quot;44&quot;]
+     Content type = application/json;charset=ISO-8859-1
+             Body = This property type does not exist in the DB.
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = PUT
+      Request URI = /createTax
+       Parameters = {}
+          Headers = [Content-Type:&quot;application/json;charset=UTF-8&quot;, Accept:&quot;application/json&quot;]
+             Body = {
+  &quot;property_type&quot; : &quot;loft&quot;,
+  &quot;amount&quot; : 200,
+  &quot;propertyType&quot; : &quot;loft&quot;
+}
+    Session Attrs = {}
+
+Handler:
+             Type = com.example.restservice.TaxRateController
+           Method = com.example.restservice.TaxRateController#create(TaxRate)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:&quot;application/json;charset=ISO-8859-1&quot;, Content-Length:&quot;6&quot;]
+     Content type = application/json;charset=ISO-8859-1
+             Body = 200 OK
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /readTax
+       Parameters = {property_type=[tower]}
+          Headers = []
+             Body = &lt;no character encoding set&gt;
+    Session Attrs = {}
+
+Handler:
+             Type = com.example.restservice.TaxRateController
+           Method = com.example.restservice.TaxRateController#read(String)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:&quot;text/plain;charset=ISO-8859-1&quot;, Content-Length:&quot;37&quot;]
+     Content type = text/plain;charset=ISO-8859-1
+             Body = Property type: 'tower', Amount: '200'
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /readTax
+       Parameters = {property_type=[tower]}
+          Headers = []
+             Body = &lt;no character encoding set&gt;
+    Session Attrs = {}
+
+Handler:
+             Type = com.example.restservice.TaxRateController
+           Method = com.example.restservice.TaxRateController#read(String)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:&quot;text/plain;charset=ISO-8859-1&quot;, Content-Length:&quot;37&quot;]
+     Content type = text/plain;charset=ISO-8859-1
+             Body = Property type: 'tower', Amount: '200'
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /updateTax
+       Parameters = {}
+          Headers = [Content-Type:&quot;application/json;charset=UTF-8&quot;, Accept:&quot;application/json&quot;]
+             Body = {
+  &quot;property_type&quot; : &quot;house&quot;,
+  &quot;amount&quot; : 150,
+  &quot;propertyType&quot; : &quot;house&quot;
+}
+    Session Attrs = {}
+
+Handler:
+             Type = com.example.restservice.TaxRateController
+           Method = com.example.restservice.TaxRateController#update(TaxRate)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:&quot;application/json;charset=ISO-8859-1&quot;, Content-Length:&quot;6&quot;]
+     Content type = application/json;charset=ISO-8859-1
+             Body = 200 OK
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 6.3</a> at Jul 14, 2020, 9:18:13 AM</p>
+</div>
+</div>
+</body>
+</html>

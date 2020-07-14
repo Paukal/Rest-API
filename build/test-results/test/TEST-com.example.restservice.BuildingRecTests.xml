@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.restservice.BuildingRecTests" tests="6" skipped="0" failures="0" errors="0" timestamp="2020-07-14T06:18:03" hostname="DESKTOP-2ALQQDC" time="1.745">
+  <properties/>
+  <testcase name="putDeleteRequestTest()" classname="com.example.restservice.BuildingRecTests" time="0.909"/>
+  <testcase name="putTwoTimesRequestTest()" classname="com.example.restservice.BuildingRecTests" time="0.101"/>
+  <testcase name="postDBNonExistRequestTest()" classname="com.example.restservice.BuildingRecTests" time="0.167"/>
+  <testcase name="putRequestTest()" classname="com.example.restservice.BuildingRecTests" time="0.124"/>
+  <testcase name="putGetRequestTest()" classname="com.example.restservice.BuildingRecTests" time="0.129"/>
+  <testcase name="putPostRequestTest()" classname="com.example.restservice.BuildingRecTests" time="0.237"/>
+  <system-out><![CDATA[09:17:53.120 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+09:17:53.183 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+09:17:53.321 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.example.restservice.BuildingRecTests] from class [org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper]
+09:17:53.399 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.example.restservice.BuildingRecTests]: class path resource [com/example/restservice/BuildingRecTests-context.xml] does not exist
+09:17:53.406 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.example.restservice.BuildingRecTests]: class path resource [com/example/restservice/BuildingRecTestsContext.groovy] does not exist
+09:17:53.406 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.example.restservice.BuildingRecTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+09:17:53.584 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.example.restservice.BuildingRecTests]
+09:17:53.637 [Test worker] DEBUG org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper - @TestExecutionListeners is not present for class [com.example.restservice.BuildingRecTests]: using defaults.
+09:17:53.637 [Test worker] INFO org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+09:17:53.684 [Test worker] DEBUG org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper - Skipping candidate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [org/springframework/transaction/interceptor/TransactionAttributeSource]
+09:17:53.684 [Test worker] DEBUG org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper - Skipping candidate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
+09:17:53.700 [Test worker] INFO org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@33c72512, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@2bc54a79, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@71abba68, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@2e2a6a04, org.springframework.test.context.support.DirtiesContextTestExecutionListener@24cf3566, org.springframework.test.context.event.EventPublishingTestExecutionListener@25582504, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@98ca33d, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@748b8242, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@29b2fdb0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@4d269d87, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@215f4a55]
+09:17:53.707 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@a9d7f7b testClass = BuildingRecTests, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@66b18765 testClass = BuildingRecTests, locations = '{}', classes = '{class com.example.restservice.MyWebConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$DisableAutoConfigurationContextCustomizer@29fb42f8, org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@9060a797, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@dd34e79b, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@1d26674c, [ImportsContextCustomizer@1fbeb2f7 key = [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration, org.springframework.boot.autoconfigure.context.MessageSourceAutoConfiguration, org.springframework.boot.autoconfigure.data.web.SpringDataWebAutoConfiguration, org.springframework.boot.autoconfigure.freemarker.FreeMarkerAutoConfiguration, org.springframework.boot.autoconfigure.groovy.template.GroovyTemplateAutoConfiguration, org.springframework.boot.autoconfigure.gson.GsonAutoConfiguration, org.springframework.boot.autoconfigure.hateoas.HypermediaAutoConfiguration, org.springframework.boot.autoconfigure.http.HttpMessageConvertersAutoConfiguration, org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration, org.springframework.boot.autoconfigure.jsonb.JsonbAutoConfiguration, org.springframework.boot.autoconfigure.mustache.MustacheAutoConfiguration, org.springframework.boot.autoconfigure.task.TaskExecutionAutoConfiguration, org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration, org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration, org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration, org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebClientAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebDriverAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcSecurityConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@54e2aae6, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@b2cdfe7, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.test.context.web.socket.MockServerContainerContextCustomizer@2bdeee28], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map[[empty]]], class annotated with @DirtiesContext [false] with mode [null].
+09:17:54.101 [Test worker] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper=true, server.port=-1}
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.2.0.RELEASE)
+
+2020-07-14 09:17:55.233  INFO 7752 --- [    Test worker] c.example.restservice.BuildingRecTests   : Starting BuildingRecTests on DESKTOP-2ALQQDC with PID 7752 (started by Paul in C:\Users\Paul\Documents\Study_n_code\JOB\Zenitech\complete)
+2020-07-14 09:17:55.248  INFO 7752 --- [    Test worker] c.example.restservice.BuildingRecTests   : No active profile set, falling back to default profiles: default
+2020-07-14 09:18:01.476  INFO 7752 --- [    Test worker] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-07-14 09:18:02.579  INFO 7752 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2020-07-14 09:18:02.579  INFO 7752 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2020-07-14 09:18:02.633  INFO 7752 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 54 ms
+2020-07-14 09:18:02.733  INFO 7752 --- [    Test worker] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-07-14 09:18:02.827  INFO 7752 --- [    Test worker] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-07-14 09:18:02.912  INFO 7752 --- [    Test worker] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-07-14 09:18:03.282  INFO 7752 --- [    Test worker] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: createUsingPUT_1
+2020-07-14 09:18:03.297  INFO 7752 --- [    Test worker] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_1
+2020-07-14 09:18:03.297  INFO 7752 --- [    Test worker] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: readUsingGET_1
+2020-07-14 09:18:03.313  INFO 7752 --- [    Test worker] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_1
+2020-07-14 09:18:03.382  INFO 7752 --- [    Test worker] c.example.restservice.BuildingRecTests   : Started BuildingRecTests in 9.243 seconds (JVM running for 14.273)
+
+MockHttpServletRequest:
+      HTTP Method = DELETE
+      Request URI = /delete
+       Parameters = {address=[Miami, Jordan, 23]}
+          Headers = []
+             Body = <no character encoding set>
+    Session Attrs = {}
+
+Handler:
+             Type = com.example.restservice.BuildingRecController
+           Method = com.example.restservice.BuildingRecController#delete(String)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:"text/plain;charset=ISO-8859-1", Content-Length:"6"]
+     Content type = text/plain;charset=ISO-8859-1
+             Body = 200 OK
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = DELETE
+      Request URI = /delete
+       Parameters = {address=[Miami, Jordan, 23]}
+          Headers = []
+             Body = <no character encoding set>
+    Session Attrs = {}
+
+Handler:
+             Type = com.example.restservice.BuildingRecController
+           Method = com.example.restservice.BuildingRecController#delete(String)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:"text/plain;charset=ISO-8859-1", Content-Length:"6"]
+     Content type = text/plain;charset=ISO-8859-1
+             Body = 200 OK
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = PUT
+      Request URI = /create
+       Parameters = {}
+          Headers = [Content-Type:"application/json;charset=UTF-8", Accept:"application/json"]
+             Body = {
+  "address" : "Ilinouts, test 23",
+  "owner" : "Edward Johnson",
+  "size" : 25000,
+  "market_value" : 100000,
+  "property_type" : "house",
+  "marketValue" : 100000,
+  "propertyType" : "house"
+}
+    Session Attrs = {}
+
+Handler:
+             Type = com.example.restservice.BuildingRecController
+           Method = com.example.restservice.BuildingRecController#create(BuildingRecord)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:"application/json;charset=ISO-8859-1", Content-Length:"49"]
+     Content type = application/json;charset=ISO-8859-1
+             Body = Building record with this address already exists.
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /update
+       Parameters = {}
+          Headers = [Content-Type:"application/json;charset=UTF-8", Accept:"application/json"]
+             Body = {
+  "address" : "nonExistant address",
+  "owner" : "Edward Johnson",
+  "size" : 25000,
+  "market_value" : 100000,
+  "property_type" : "house",
+  "marketValue" : 100000,
+  "propertyType" : "house"
+}
+    Session Attrs = {}
+
+Handler:
+             Type = com.example.restservice.BuildingRecController
+           Method = com.example.restservice.BuildingRecController#update(BuildingRecord)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:"application/json;charset=ISO-8859-1", Content-Length:"46"]
+     Content type = application/json;charset=ISO-8859-1
+             Body = This building record does not exist in the DB.
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = PUT
+      Request URI = /create
+       Parameters = {}
+          Headers = [Content-Type:"application/json;charset=UTF-8", Accept:"application/json"]
+             Body = {
+  "address" : "Chicago, Bronson st., 89",
+  "owner" : "Edward Johnson",
+  "size" : 25000,
+  "market_value" : 100000,
+  "property_type" : "house",
+  "marketValue" : 100000,
+  "propertyType" : "house"
+}
+    Session Attrs = {}
+
+Handler:
+             Type = com.example.restservice.BuildingRecController
+           Method = com.example.restservice.BuildingRecController#create(BuildingRecord)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:"application/json;charset=ISO-8859-1", Content-Length:"6"]
+     Content type = application/json;charset=ISO-8859-1
+             Body = 200 OK
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /read
+       Parameters = {address=[Orlando, Sixton., 02]}
+          Headers = []
+             Body = <no character encoding set>
+    Session Attrs = {}
+
+Handler:
+             Type = com.example.restservice.BuildingRecController
+           Method = com.example.restservice.BuildingRecController#read(String)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:"text/plain;charset=ISO-8859-1", Content-Length:"121"]
+     Content type = text/plain;charset=ISO-8859-1
+             Body = Address: 'Orlando, Sixton., 02', Owner: 'Edward Johnson', Size: '25000'', Market value: '100000'', Property type: 'house'
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /read
+       Parameters = {address=[Orlando, Sixton., 02]}
+          Headers = []
+             Body = <no character encoding set>
+    Session Attrs = {}
+
+Handler:
+             Type = com.example.restservice.BuildingRecController
+           Method = com.example.restservice.BuildingRecController#read(String)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:"text/plain;charset=ISO-8859-1", Content-Length:"121"]
+     Content type = text/plain;charset=ISO-8859-1
+             Body = Address: 'Orlando, Sixton., 02', Owner: 'Edward Johnson', Size: '25000'', Market value: '100000'', Property type: 'house'
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /update
+       Parameters = {}
+          Headers = [Content-Type:"application/json;charset=UTF-8", Accept:"application/json"]
+             Body = {
+  "address" : "Lithuania, Kaunas, 56",
+  "owner" : "Mr James",
+  "size" : 500,
+  "market_value" : 40,
+  "property_type" : "loft",
+  "marketValue" : 40,
+  "propertyType" : "loft"
+}
+    Session Attrs = {}
+
+Handler:
+             Type = com.example.restservice.BuildingRecController
+           Method = com.example.restservice.BuildingRecController#update(BuildingRecord)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:"application/json;charset=ISO-8859-1", Content-Length:"6"]
+     Content type = application/json;charset=ISO-8859-1
+             Body = 200 OK
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
